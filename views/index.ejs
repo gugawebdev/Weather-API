@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+<h1>TEST WEATHER API</h1>
+<form action="/temperature" method="POST">
+	<input type="text" name="city" placeholder="Nome da cidade:">
+	<input type="text" name="estado" placeholder="Estado:">
+	<input type="submit" name="">
+
+	<p><strong>Nome da cidade:</strong>	<%=result[0].location.name%></p>
+	<p><strong>Temperatura:</strong> <%=result[0].current.temperature%>º</p>
+</form>
+
+
+</body>
+</html>
